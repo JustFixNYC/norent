@@ -5,8 +5,6 @@ import Layout from '../components/layout';
 import LandingPageScaffolding from './index.js';
 import { Link } from 'gatsby';
 
-const letterURL = 'https://justfix.app.law/?i=docassemble.playground1:BrQm8N3wh4C8FPDk.yml&reset=1&key=J2NsHXy22cyUyMoTrHq1nujrX';
-
 const AboutModalPage = () => (
     <Layout>
         <LandingPageScaffolding />
