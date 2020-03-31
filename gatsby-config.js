@@ -2,7 +2,7 @@ module.exports = {
 	siteMetadata: {
 		title: 'Can’t Pay Rent? Send a letter to your landlord.',
 		author: 'JustFix.nyc',
-		imageUrl: 'https://i.imgur.com/Vz81GEl.png',
+		imageUrl: 'https://i.imgur.com/eMDyUOe.png',
 		description: 'Millions of Americans won’t be able to pay rent because of COVID-19. Take action by writing a letter to your landlord.',
 		keywords: `rent payment, rent due, help paying rent, pay rent, pay my rent, can’t pay rent, april 1st, rent strike`,
 	},
