@@ -5,6 +5,7 @@ module.exports = {
 		imageUrl: 'https://i.imgur.com/eMDyUOe.png',
 		description: 'Millions of Americans won’t be able to pay rent because of COVID-19. Take action by writing a letter to your landlord.',
 		keywords: `rent payment, rent due, help paying rent, pay rent, pay my rent, can’t pay rent, april 1st, rent strike`,
+		siteUrl: `https://www.norent.org`,
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',

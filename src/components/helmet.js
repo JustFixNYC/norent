@@ -13,6 +13,7 @@ export default () => (
 						imageUrl
 						description
 						keywords
+						siteUrl
 					}
 				}
 			}
@@ -34,6 +35,22 @@ export default () => (
 					content={data.site.siteMetadata.description}
 				/>
 				<meta itemprop="image" content={data.site.siteMetadata.imageUrl} /> />
+
+				<meta name="author" content="JustFix.nyc" />
+
+				<meta property="og:site_name" content={data.site.siteMetadata.title} />
+				<meta property="og:title" content={data.site.siteMetadata.title} />
+				<meta property="og:description" content={data.site.siteMetadata.description} />
+				<meta property="og:url" content={data.site.siteMetadata.siteUrl} />
+				<meta property="og:image" content={encodeURI(data.site.siteMetadata.imageUrl)} />
+				<meta property="og:type" content="website" />
+
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:title" content={data.site.siteMetadata.title} />
+				<meta name="twitter:description" content={data.site.siteMetadata.description} />
+				<meta name="twitter:url" content={data.site.siteMetadata.siteUrl} />
+				<meta name="twitter:image" content={encodeURI(data.site.siteMetadata.imageUrl)} />
+				<meta name="twitter:image:alt" content={data.site.siteMetadata.title} />
 			</Helmet>
 		)}
 	/>
