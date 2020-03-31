@@ -1,16 +1,16 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby Bulma Quickstart',
-		author: 'Aman Mittal',
+		title: 'Can’t Pay Rent? Send a letter to your landlord.',
+		author: 'JustFix.nyc',
 		imageUrl: 'https://i.imgur.com/Vz81GEl.png',
-		description: 'A Project to bootstrap your next Gatsby + Bulma site.',
-		keywords: `Web developer, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Bulma Developer, CSS3, HTML5, Seo, Starter`,
+		description: 'Millions of Americans won’t be able to pay rent because of COVID-19. Take action by writing a letter to your landlord.',
+		keywords: `rent payment, rent due, help paying rent, pay rent, pay my rent, can’t pay rent, april 1st, rent strike`,
 		twitter: 'https://twitter.com/amanhimself',
 		github: `https://github.com/amandeepmittal`,
 		medium: 'https://medium.com/@amanhimself',
 		gatsby: 'https://www.gatsbyjs.org/',
 		bulma: 'https://bulma.io/',
-		siteUrl: `https://www.example.com`
+		siteUrl: `https://www.norent.org`
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -21,18 +21,24 @@ module.exports = {
 				path: `${__dirname}/src/images`
 			}
 		},
+		{
+			resolve: `gatsby-plugin-canonical-urls`,
+			options: {
+			  siteUrl: {siteUrl},
+			},
+		},
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: 'Makefolio',
-				short_name: 'Makefolio',
+				name: 'COVID Letter App',
+				short_name: 'COVID Letter App',
 				start_url: '/',
 				background_color: '#2980b9',
 				theme_color: '#2980b9',
 				display: 'standalone',
-				icon: 'src/images/gatsby-icon.png',
+				icon: 'src/images/rent.svg',
 				orientation: 'portrait'
 			}
 		},

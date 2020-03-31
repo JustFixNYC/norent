@@ -3,7 +3,7 @@ import './style.scss';
 
 import RentLogo from '../images/rent.svg';
 
-const letterURL = 'https://justfix.app.law/interview?i=docassemble.playground1%3AYuT7kKHYrv5kU7ft.yml#page1';
+const letterURL = 'https://justfix.app.law/?i=docassemble.playground1:BrQm8N3wh4C8FPDk.yml&reset=1&key=J2NsHXy22cyUyMoTrHq1nujrX';
 
 const Midsection = () => (
 	<section className="hero is-primary is-fullheight">
@@ -13,7 +13,7 @@ const Midsection = () => (
 					Can't pay rent?
 				</h1>
 				<figure className="image rent-logo">
-					<img src={RentLogo} />
+					<img src={RentLogo} alt="rent-logo" />
 				</figure>
 				<div className="subtitle is-size-5 has-text-info">
 					You're not alone. Millions of Americans won't be able to pay rent because of COVID-19
