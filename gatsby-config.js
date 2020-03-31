@@ -44,10 +44,6 @@ module.exports = {
 				// Setting this parameter is optional (requried for some countries such as Germany)
 				anonymize: true
 			}
-		},
-		`gatsby-plugin-sitemap`
-		// this (optional) plugin enables Progressive Web App + Offline functionality
-		// To learn more, visit: https://gatsby.app/offline
-		// 'gatsby-plugin-offline',
+		}
 	]
 };
