@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Can’t Pay Rent? Send a letter to your landlord.',
+		title: 'Can’t Pay Rent in LA? Send a letter to your landlord.',
 		author: 'JustFix.nyc',
 		imageUrl: 'https://i.imgur.com/eMDyUOe.png',
 		description: 'Millions of Americans won’t be able to pay rent because of COVID-19. Take action by writing a letter to your landlord.',

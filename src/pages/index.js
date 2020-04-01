@@ -12,7 +12,7 @@ export const LandingPageScaffolding = () => (
         <div className="hero-body">
             <div className="container has-text-centered">
                 <h1 className="title has-text-black is-size-1 is-spaced is-uppercase has-text-weight-bold">
-                    Can't pay rent?
+                    Can't pay rent in Los Angeles?
                 </h1>
                 <figure className="image is-2by1 rent-logo">
                     <img src={RentLogo} alt="rent-logo" />
