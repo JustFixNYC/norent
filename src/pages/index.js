@@ -2,7 +2,7 @@
 import React from 'react';
 import { useEffect } from "react";
 import { navigate } from "gatsby";
-import { DEFAULT_LOCALE, standardizeLocale } from "../components/locales";
+import { DEFAULT_LOCALE, standardizeLocale } from "../components/i18n";
 
 // Adapted from this very useful StackOverflow post: 
 // https://stackoverflow.com/questions/59908989/redirect-based-on-browser-language-in-gatsby
