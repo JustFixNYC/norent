@@ -5,22 +5,9 @@ import { LandingPageScaffolding } from './index.en';
 
 const LandingPage__es = () => {
     const data = useStaticQuery(graphql`
-        query { 
-            contentfulPage(node_locale:{eq: "es"},location:{eq: "general"} ) {
-                node_locale
-                title
-                description {
-                    json
-                }
-                startLetterCta
-                modalLinkCta
-                aboutText {
-                    json
-                }
-            }
-        }
+        query ($locale: String! = "es", $location: String! = "general") { ...Page }
     `)
-
+    
     return (
         <Layout>
             <LandingPageScaffolding content={data.contentfulPage} />

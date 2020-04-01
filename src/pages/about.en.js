@@ -29,20 +29,7 @@ export const AboutModalPageScaffolding = (props) => (
 
 const AboutModalPage__en = () => {
     const data = useStaticQuery(graphql`
-        query { 
-            contentfulPage(node_locale:{eq: "en"},location:{eq: "general"} ) {
-                node_locale
-                title
-                description {
-                    json
-                }
-                startLetterCta
-                modalLinkCta
-                aboutText {
-                    json
-                }
-            }
-        }
+        query ($locale: String! = "en", $location: String! = "general") { ...Page }
     `)
     
     return (
