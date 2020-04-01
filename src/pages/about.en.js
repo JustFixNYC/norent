@@ -3,7 +3,7 @@ import React from 'react';
 import '../scss/style.scss';
 import Layout from '../components/layout';
 import LandingPageScaffolding from './index.en.js';
-import { localizeRoute } from '../components/locales';
+import { localizeRoute } from '../components/i18n';
 import { useStaticQuery, Link, graphql } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 

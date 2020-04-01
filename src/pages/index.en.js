@@ -5,7 +5,7 @@ import RentLogo from '../images/rent.svg';
 import Layout from '../components/layout';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import { localizeRoute, LanguageToggle } from '../components/locales';
+import { localizeRoute, LanguageToggle } from '../components/i18n';
 
 export const LandingPageScaffolding = (props) => (
     <section className="hero is-fullheight">
