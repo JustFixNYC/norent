@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../scss/style.scss';
 import Layout from '../components/layout';
-import { useStaticQuery } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import { AboutModalPageScaffolding } from './about.en';
 
 

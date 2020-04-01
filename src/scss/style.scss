@@ -1,22 +1,29 @@
 $info: #007BFF;
 // $primary: #FCFAF2;
 
+// Importing Bulma from node_modules
+@import '~bulma/bulma.sass';
+@import "~bulma/sass/utilities/initial-variables.sass";
 
 div.has-text-centered {
 	max-width: 450px;
 }
 
 .image.rent-logo {
-	margin: 2rem 0 1rem 0;
+	margin: 1rem 0 1.5rem 0;
 	img {
-		max-height: 200px;
+		max-height: 160px;
 	}
 }
 
-.container.footer-link {
-	margin: 0 auto 1.5rem auto;
+.container {
+	p {
+		margin-bottom: 1rem;
+	}
 }
 
-// Importing Bulma from node_modules
-@import '~bulma/bulma.sass';
-@import "~bulma/sass/utilities/initial-variables.sass";
+// Bulma Overrides:
+
+.modal-card-head {
+	padding: 12px;
+}

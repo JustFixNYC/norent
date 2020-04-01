@@ -11,10 +11,10 @@ export const LandingPageScaffolding = (props) => (
     <section className="hero is-fullheight">
         <div className="hero-body">
             <div className="container has-text-centered">
-                <h1 className="title has-text-black is-size-1 is-spaced is-uppercase has-text-weight-bold">
+                <h1 className="title has-text-black is-size-2 is-spaced is-uppercase has-text-weight-bold">
                     {props.content.title}
                 </h1>
-                <figure className="image is-2by1 rent-logo">
+                <figure className="image is-3by1 rent-logo">
                     <img src={RentLogo} alt="rent-logo" />
                 </figure>
                 <div className="subtitle has-text-black is-size-5" >
