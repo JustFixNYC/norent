@@ -5,6 +5,7 @@
   "author": "Aman Mittal <amandeepmittal@live.com>",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.4.0",
+    "@types/react": "^16.9.31",
     "bulma": "^0.8.0",
     "bulma-divider": "^0.2.0",
     "dotenv": "^8.2.0",
@@ -27,6 +28,8 @@
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.9.0",
+    "typescript": "^3.8.3",
+    "webpack": "^3.0.0",
     "widont": "^0.3.3"
   },
   "keywords": [
