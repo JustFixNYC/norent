@@ -7,13 +7,15 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { localizeRoute, LanguageToggle } from '../components/i18n';
 
+const widont = require('widont');
+
 export const LandingPageScaffolding = (props) => (
     <section className="hero is-fullheight">
         <LanguageToggle locale={props.content.node_locale} />
         <div className="hero-body">
             <div className="container has-text-centered">
                 <h1 className="title has-text-black is-size-2 is-spaced is-uppercase has-text-weight-bold">
-                    {props.content.title}
+                    {widont(props.content.title)}
                 </h1>
                 <figure className="image is-3by1 nr-rent-logo">
                     <img src={RentLogo} alt="rent-logo" />

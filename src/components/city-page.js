@@ -5,6 +5,8 @@ import RentLogo from '../images/rent.svg';
 import Layout from '../components/layout';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
+const widont = require('widont');
+
 const letterURL = 'https://justfix.app.law/interview?i=docassemble.playground1%3ABrQm8N3wh4C8FPDk.yml#page2';
 
 const CityPage = (props) => (
@@ -13,7 +15,7 @@ const CityPage = (props) => (
             <div className="hero-body">
                 <div className="container">
                     <h1 className="title has-text-black is-size-2 is-spaced is-uppercase has-text-weight-bold">
-                        {props.content.title}
+                        {widont(props.content.title)}
                     </h1>
                     <figure className="image is-3by1 nr-rent-logo">
                         <img src={RentLogo} alt="rent-logo" />
