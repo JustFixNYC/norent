@@ -3,11 +3,8 @@ $info: #007BFF;
 
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
+@import '~bulma-divider';
 @import "~bulma/sass/utilities/initial-variables.sass";
-
-div.has-text-centered {
-	max-width: 450px;
-}
 
 .image.rent-logo {
 	margin: 1rem 0 1.5rem 0;
@@ -16,14 +13,22 @@ div.has-text-centered {
 	}
 }
 
-.container {
-	p {
-		margin-bottom: 1rem;
-	}
-}
-
 // Bulma Overrides:
 
 .modal-card-head {
 	padding: 12px;
+}
+
+.container {
+	max-width: 550px;
+	p, ul, ol {
+		margin-bottom: 1rem;
+	}
+	li p {
+		margin-bottom: 0.5rem;
+	}
+}
+
+.is-divider {
+	margin: 4rem 0;
 }
