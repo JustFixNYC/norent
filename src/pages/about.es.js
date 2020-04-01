@@ -1,14 +1,15 @@
 import React from 'react';
 
 import '../scss/style.scss';
+import Layout from '../components/layout';
 import { useStaticQuery } from 'gatsby';
-import CityPage from '../components/city-page';
+import AboutModalPageScaffolding from '.';
 
-const LaPage__es = () => {
-        
+
+const AboutModalPage__en = () => {
     const data = useStaticQuery(graphql`
         query { 
-            contentfulPage(node_locale:{eq: "es"},location:{eq: "la"} ) {
+            contentfulPage(node_locale:{eq: "es"},location:{eq: "general"} ) {
                 node_locale
                 title
                 description {
@@ -22,10 +23,12 @@ const LaPage__es = () => {
             }
         }
     `)
-
-    const content = data.contentfulPage;
-    return <CityPage content={content} />
-}
     
+    return (
+        <Layout>
+            <AboutModalPageScaffolding content={data.contentfulPage} />
+        </Layout>
+    );
+}
 
-export default LaPage__es;
+export default AboutModalPage__en;

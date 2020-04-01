@@ -1,11 +1,11 @@
+
+import React from 'react';
 import { useEffect } from "react";
 import { navigate } from "gatsby";
+import { DEFAULT_LOCALE, standardizeLocale } from "../components/locales";
 
 // Adapted from this very useful StackOverflow post: 
 // https://stackoverflow.com/questions/59908989/redirect-based-on-browser-language-in-gatsby
-
-const DEFAULT_LOCALE = "en";
-const ACCEPTED_LOCALES = ["en", "es"];
 
 const getRedirectLanguage = () => {
   if (typeof navigator === `undefined`) {
@@ -15,23 +15,18 @@ const getRedirectLanguage = () => {
   const lang = navigator && navigator.language && navigator.language.split("-")[0];
   if (!lang) return DEFAULT_LOCALE;
 
-  
-  return (
-      ACCEPTED_LOCALES.includes(lang) 
-        ? lang
-        : DEFAULT_LOCALE
-    );
+  return standardizeLocale(lang);
 
 };
 
 const IndexPage = () => {
-  useEffect(() => {
-    const urlLang = getRedirectLanguage();
+  // useEffect(() => {
+  //   const urlLang = getRedirectLanguage();
 
-    navigate(`/${urlLang}`);
-  }, []);
+  //   navigate(`/${urlLang}`);
+  // }, []);
 
-  return null;
+  return <></>;
 };
 
 export default IndexPage;

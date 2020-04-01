@@ -4,7 +4,7 @@ import '../scss/style.scss';
 import { useStaticQuery } from 'gatsby';
 import CityPage from '../components/city-page';
 
-const LaPage = (props) => {
+const LaPage__en = () => {
         
     const data = useStaticQuery(graphql`
         query { 
@@ -28,4 +28,4 @@ const LaPage = (props) => {
 }
     
 
-export default LaPage;
+export default LaPage__en;
