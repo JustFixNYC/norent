@@ -3,8 +3,8 @@ import React from 'react';
 import '../scss/style.scss';
 import Layout from '../components/layout';
 import LandingPageScaffolding from './index.en.js';
-import { LocaleLink, localizeRoute } from '../components/locales';
-import { useStaticQuery, Link } from 'gatsby';
+import { localizeRoute } from '../components/locales';
+import { useStaticQuery, Link, graphql } from 'gatsby';
 
 export const AboutModalPageScaffolding = (props) => (
     <>

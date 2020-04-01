@@ -3,7 +3,7 @@ import React from 'react';
 import '../scss/style.scss';
 import Layout from '../components/layout';
 import { useStaticQuery } from 'gatsby';
-import AboutModalPageScaffolding from '.';
+import { AboutModalPageScaffolding } from './about.en';
 
 
 const AboutModalPage__en = () => {

@@ -3,7 +3,7 @@ import React from 'react';
 import '../scss/style.scss';
 import RentLogo from '../images/rent.svg';
 import Layout from '../components/layout';
-import { Link, useStaticQuery } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { localizeRoute } from '../components/locales';
 

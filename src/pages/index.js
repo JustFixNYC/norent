@@ -20,11 +20,11 @@ const getRedirectLanguage = () => {
 };
 
 const IndexPage = () => {
-  // useEffect(() => {
-  //   const urlLang = getRedirectLanguage();
+  useEffect(() => {
+    const urlLang = getRedirectLanguage();
 
-  //   navigate(`/${urlLang}`);
-  // }, []);
+    navigate(`/${urlLang}`);
+  }, []);
 
   return <></>;
 };

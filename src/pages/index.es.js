@@ -1,7 +1,7 @@
 import React from 'react';
-import { useStaticQuery } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
-import LandingPageScaffolding from '.';
+import { LandingPageScaffolding } from './index.en';
 
 const LandingPage__es = () => {
     const data = useStaticQuery(graphql`

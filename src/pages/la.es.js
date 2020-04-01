@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../scss/style.scss';
-import { useStaticQuery } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import CityPage from '../components/city-page';
 
 const LaPage__es = () => {
