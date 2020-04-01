@@ -4,14 +4,11 @@ import '../scss/style.scss';
 import RentLogo from '../images/rent.svg';
 import Layout from '../components/layout';
 import { Link } from 'gatsby';
-import { useIntl } from "gatsby-plugin-intl"
 
 const letterURL = 'https://justfix.app.law/?i=docassemble.playground1:BrQm8N3wh4C8FPDk.yml&reset=1&key=J2NsHXy22cyUyMoTrHq1nujrX';
 
-export const LandingPageScaffolding = () => {
-    const intl = useIntl();
-    console.log(intl.formatMessage({id: "locale"}));
-    return <section className="hero is-fullheight">
+export const LandingPageScaffolding = () => (
+    <section className="hero is-fullheight">
         <div className="hero-body">
             <div className="container has-text-centered">
                 <h1 className="title has-text-black is-size-1 is-spaced is-uppercase has-text-weight-bold">
@@ -36,7 +33,7 @@ export const LandingPageScaffolding = () => {
             <Link to='/about'>Who's behind this?</Link>
         </div>
     </section>
-};
+);
 
 const LandingPage = () => (
     <Layout>
