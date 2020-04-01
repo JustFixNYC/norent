@@ -6,9 +6,9 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { AboutModalPageScaffolding } from './about.en';
 
 
-const AboutModalPage__en = () => {
+const AboutModalPage__es = () => {
     const data = useStaticQuery(graphql`
-        query ($locale: String! = "en", $location: String! = "general") { ...Page }
+        query ($locale: String! = "es", $location: String! = "general") { ...Page }
     `)
     
     return (
@@ -18,4 +18,4 @@ const AboutModalPage__en = () => {
     );
 }
 
-export default AboutModalPage__en;
+export default AboutModalPage__es;
