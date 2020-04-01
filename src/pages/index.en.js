@@ -5,16 +5,17 @@ import RentLogo from '../images/rent.svg';
 import Layout from '../components/layout';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import { localizeRoute } from '../components/locales';
+import { localizeRoute, LanguageToggle } from '../components/locales';
 
 export const LandingPageScaffolding = (props) => (
     <section className="hero is-fullheight">
+        <LanguageToggle locale={props.content.node_locale} />
         <div className="hero-body">
             <div className="container has-text-centered">
                 <h1 className="title has-text-black is-size-2 is-spaced is-uppercase has-text-weight-bold">
                     {props.content.title}
                 </h1>
-                <figure className="image is-3by1 rent-logo">
+                <figure className="image is-3by1 nr-rent-logo">
                     <img src={RentLogo} alt="rent-logo" />
                 </figure>
                 <div className="subtitle has-text-black is-size-5" >
@@ -26,7 +27,7 @@ export const LandingPageScaffolding = (props) => (
                 </Link>
             </div>
         </div>
-        <div className="container footer-link has-text-centered">
+        <div className="container nr-footer-link has-text-centered">
             <Link to={localizeRoute('/about',props.content.node_locale)}>{props.content.modalLinkCta}</Link>
         </div>
     </section>
