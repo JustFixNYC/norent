@@ -53,6 +53,13 @@ module.exports = {
 		},
 		`gatsby-plugin-sass`,
 		{
+			resolve: 'gatsby-plugin-i18n',
+			options: {        
+				langKeyDefault: 'en',
+				prefixDefault: 'en'
+			}
+		},
+		{
 			resolve: "gatsby-plugin-google-tagmanager",
 			options: {
 			  id: "GTM-NMPT5JP",

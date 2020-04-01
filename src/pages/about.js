@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../scss/style.scss';
 import Layout from '../components/layout';
-import LandingPageScaffolding from './index.js';
+import LandingPageScaffolding from './index.en.js';
 import { Link } from 'gatsby';
 
 const AboutModalPage = () => (
