@@ -8,6 +8,7 @@
     "@types/react": "^16.9.31",
     "bulma": "^0.8.0",
     "bulma-divider": "^0.2.0",
+    "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",

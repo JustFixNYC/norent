@@ -31,6 +31,11 @@ $info: #007BFF;
 	text-decoration: underline;
 }
 
+.nr-is-disabled {
+	pointer-events: none;
+	color: black;
+}
+
 .nr-footer-link {
 	margin-bottom: 0.5rem;
 }

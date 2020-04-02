@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby";
+import classnames from 'classnames';
 
 export const DEFAULT_LOCALE = "en"; 
 export const ACCEPTED_LOCALES = ["en", "es"];
@@ -16,9 +17,14 @@ export function localizeRoute(route, locale) {
 export const LanguageToggle = (props) => {
     const alternateLocale = props.locale === 'en' ? 'es' : 'en';
     return (
-        <Link className="nr-language-toggle is-uppercase" to={'/' + alternateLocale}>
-            <span className={props.locale === "en" ? 'nr-is-underlined' : ''}>In English</span>
-            {' / '}
-            <span className={props.locale === "es" ? 'nr-is-underlined' : ''}>En Español</span>
-        </Link>)
+        <div className="nr-language-toggle">
+            <Link className={classnames("is-uppercase", props.locale === "en" && 'nr-is-underlined nr-is-disabled')} to={'/' + alternateLocale}>
+                In English
+            </Link>
+                {' / '}
+            <Link className={classnames("is-uppercase", props.locale === "es" && 'nr-is-underlined nr-is-disabled')} to={'/' + alternateLocale}>
+                En Español
+            </Link>
+        </div>
+    )
 }
