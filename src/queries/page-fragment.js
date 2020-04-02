@@ -17,6 +17,7 @@ export const PageFragment = graphql`
                 json
             }
             startLetterCta
+            buttonLink
             modalLinkCta
             aboutText {
                 json

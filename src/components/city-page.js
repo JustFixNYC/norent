@@ -7,8 +7,6 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 const widont = require('widont');
 
-const letterURL = 'https://justfix.app.law/interview?i=docassemble.playground1%3ABrQm8N3wh4C8FPDk.yml#page2';
-
 const CityPage = (props) => (
     <Layout>
         <section className="hero is-fullheight">
@@ -23,7 +21,7 @@ const CityPage = (props) => (
                     <div className="subtitle has-text-black is-size-5" >
                         {documentToReactComponents(props.content.description.json)}
                     </div>
-                    <a className="button is-info is-large is-uppercase" href={letterURL}> 
+                    <a className="button is-info is-large is-uppercase" href={props.content.buttonLink}> 
                         {props.content.startLetterCta}
                     </a>
                     <div className="is-divider" />
