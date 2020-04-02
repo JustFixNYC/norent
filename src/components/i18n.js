@@ -16,9 +16,9 @@ export function localizeRoute(route, locale) {
 export const LanguageToggle = (props) => {
     const alternateLocale = props.locale === 'en' ? 'es' : 'en';
     return (
-        <Link className="nr-language-toggle has-text-black is-uppercase" to={'/' + alternateLocale}>
-            <span className={props.locale === "en" ? 'nr-is-underlined' : ''}>EN</span>
-            /
-            <span className={props.locale === "es" ? 'nr-is-underlined' : ''}>ESP</span>
+        <Link className="nr-language-toggle is-uppercase" to={'/' + alternateLocale}>
+            <span className={props.locale === "en" ? 'nr-is-underlined' : ''}>In English</span>
+            {' / '}
+            <span className={props.locale === "es" ? 'nr-is-underlined' : ''}>En Español</span>
         </Link>)
 }

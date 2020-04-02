@@ -23,7 +23,6 @@ export const LandingPageScaffolding = (props) => (
                 <div className="subtitle has-text-black is-size-5" >
                     {documentToReactComponents(props.content.description.json)}
                 </div>
-                    <br />
                 <Link to={localizeRoute('/la',props.content.node_locale)} className="button is-info is-large is-uppercase" > 
                     {props.content.startLetterCta}
                 </Link>

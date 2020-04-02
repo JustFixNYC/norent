@@ -23,7 +23,6 @@ const CityPage = (props) => (
                     <div className="subtitle has-text-black is-size-5" >
                         {documentToReactComponents(props.content.description.json)}
                     </div>
-                        <br />
                     <a className="button is-info is-large is-uppercase" href={letterURL}> 
                         {props.content.startLetterCta}
                     </a>

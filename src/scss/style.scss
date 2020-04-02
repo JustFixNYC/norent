@@ -9,14 +9,15 @@ $info: #007BFF;
 // Custom Rules (all custom classes have prefix nr-)
 
 .nr-language-toggle {
-	position: absolute;
-	top: 10px;
-	right: 15px;
+	margin: 10px auto;
 	letter-spacing: 2px;
 
-	&:hover {
-		opacity: 0.6;
+	@media screen and (min-width: $tablet) {
+		position: absolute;
+		top: 0px;
+		right: 15px;
 	}
+
 }
 
 .image.nr-rent-logo {
@@ -40,16 +41,25 @@ $info: #007BFF;
 	padding: 12px;
 }
 
+.hero-body {
+	@media screen and (max-width: $tablet) {
+		padding: 1rem;
+	}
+}
+
 .container {
 	max-width: 550px;
-	p {
-		margin-bottom: 1rem;
-	}
 	li p {
 		margin-bottom: 0.5rem;
 	}
-	ul, ol {
+	p {
+		margin-bottom: 1rem;
+	}
+	ul, ol, .subtitle {
 		margin-bottom: 1.5rem;
+	}
+	.subtitle {
+		margin-bottom: 2rem;
 	}
 }
 
