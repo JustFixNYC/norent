@@ -5,7 +5,7 @@ import RentLogo from '../images/rent.svg';
 import Layout from '../components/layout';
 import { Link } from 'gatsby';
 
-const letterURL = 'https://app.norent.org/?i=docassemble.playground1:BrQm8N3wh4C8FPDk.yml&reset=1&key=J2NsHXy22cyUyMoTrHq1nujrX';
+const letterURL = 'https://app.norent.org/interview?i=docassemble.playground1%3ABrQm8N3wh4C8FPDk.yml#page1';
 
 export const LandingPageScaffolding = () => (
     <section className="hero is-fullheight">
