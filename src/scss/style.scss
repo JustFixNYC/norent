@@ -1,22 +1,75 @@
+// Custom Variables:
+
 $info: #007BFF;
 // $primary: #FCFAF2;
 
+// Importing Bulma from node_modules
+@import '~bulma/bulma.sass';
+@import '~bulma-divider';
+@import "~bulma/sass/utilities/initial-variables.sass";
 
-div.has-text-centered {
-	max-width: 450px;
+// Custom Rules (all custom classes have prefix nr-)
+
+.nr-language-toggle {
+	margin: 10px auto;
+	letter-spacing: 2px;
+
+	@media screen and (min-width: $tablet) {
+		position: absolute;
+		top: 0px;
+		right: 15px;
+	}
+
 }
 
-.image.rent-logo {
-	margin: 2rem 0 1rem 0;
+.image.nr-rent-logo {
+	margin: 1rem 0 1.5rem 0;
 	img {
-		max-height: 200px;
+		max-height: 160px;
 	}
 }
 
-.container.footer-link {
-	margin: 0 auto 1.5rem auto;
+.nr-is-underlined {
+	text-decoration: underline;
 }
 
-// Importing Bulma from node_modules
-@import '~bulma/bulma.sass';
-@import "~bulma/sass/utilities/initial-variables.sass";
+.nr-is-disabled {
+	pointer-events: none;
+	color: black;
+}
+
+.nr-footer-link {
+	margin-bottom: 0.5rem;
+}
+
+// Bulma Overrides:
+
+.modal-card-head {
+	padding: 12px;
+}
+
+.hero-body {
+	@media screen and (max-width: $tablet) {
+		padding: 1rem;
+	}
+}
+
+.container {
+	max-width: 550px;
+	li p {
+		margin-bottom: 0.5rem;
+	}
+	p {
+		margin-bottom: 1rem;
+	}
+	ul, ol, .subtitle {
+		margin-bottom: 1.5rem;
+	}
+	.subtitle {
+		margin-bottom: 2rem;
+	}
+}
+
+.is-divider {
+	margin: 3rem 0;
+}

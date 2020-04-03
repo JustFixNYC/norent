@@ -1,3 +1,13 @@
+if (process.env.ENVIROMENT !== 'production') {
+	require('dotenv').config()
+  }
+  
+  const contentfulConfig = {
+	spaceId: process.env.SPACE_ID,
+	accessToken: process.env.ACCESS_TOKEN,
+	host: process.env.CONTENTFUL_HOST || 'cdn.contentful.com'
+  }
+
 module.exports = {
 	siteMetadata: {
 		title: 'Can’t Pay Rent in LA? Send a letter to your landlord.',
@@ -37,7 +47,18 @@ module.exports = {
 				orientation: 'portrait'
 			}
 		},
+		{
+			resolve: `gatsby-source-contentful`,
+			options: contentfulConfig,
+		},
 		`gatsby-plugin-sass`,
+		{
+			resolve: 'gatsby-plugin-i18n',
+			options: {        
+				langKeyDefault: 'en',
+				prefixDefault: 'en'
+			}
+		},
 		{
 			resolve: "gatsby-plugin-google-tagmanager",
 			options: {
