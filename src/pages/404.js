@@ -1,11 +1,22 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Helmet from '../components/helmet'
+import '../scss/style.scss';
 
 const NotFoundPage = () => (
-  <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <Helmet customMetadata={
+      {
+        title:"Page Not Found",
+        description: "This page does not exist.",
+        keywords: ""
+      }
+    }>
+    <section className="hero is-large has-background-light">
+      <div className="hero-body has-text-centered">
+        <h1 className="title has-text-danger is-uppercase">Not found</h1>
+        <p className="subtitle has-text-black">You just found a page that doesn&#39;t exist... the sadness.</p>
+      </div>
+    </section>
+  </Helmet>
 )
 
 export default NotFoundPage
