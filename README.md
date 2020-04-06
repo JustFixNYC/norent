@@ -1,72 +1,46 @@
-# Gatsby Bulma Quickstart
+# NoRent.org
 
-> A Quick Way to bootstrap your next Gatsby + Bulma site.
+NoRent.org (found at https://www.norent.org) is a web tool that helps tenants notify their landlords of an inability to pay rent during the COVID-19 crisis. Currently for tenants in Los Angeles, it is build in collaboration with the organization [SAJE](https://www.saje.net/).
 
-![ss](https://i.imgur.com/Vz81GEl.png)
+Actual site content is stored in [Contentful](https://www.contentful.com/), and
+the site is built using [Gatsby](https://next.gatsbyjs.org/). 
 
-## Demo 💯
+We used the [Gatsby Bulma Quickstart](https://www.gatsbyjs.org/starters/amandeepmittal/gatsby-bulma-quickstart/) template as a starting point for building out this tool.
 
-- [Demo Link](https://tender-raman-99e09b.netlify.com/)
+## Quick start
 
-## Features 🚀
+1.  Create an `.env` file by copying `.env.sample`:
 
-- Gatsby v2
-- Bulma CSS
-- Responsive design
-- Google Analytics
-- SEO
-- Netlify Deployment
+    ```
+    cp .env.sample .env
+    ```
 
-## Languages and Frameworks ⚛️
+2.  Edit the `.env` file as needed.
 
-- Gatsby
-- Bulma
-- SASS
-- GraphQL
+3.  Install dependencies:
 
-## How to use it? 👨‍💻
+    ```
+    yarn --frozen-lockfile
+    ```
 
-You need npm and Gatsby CLI installed on your development machine.
+4.  Run the development server:
 
-### 1. Clone the repository/Installation
+    ```
+    yarn develop
+    ```
 
-If you have Git installed on your system you can run the following command:
+5.  **Open the source code and start editing!**
 
-`git clone https://github.com/amandeepmittal/gatsby-bulma-quickstart.git`
+    Your site is now running at `http://localhost:8000`!
+    
+    *Note: You'll also see a second link: `http://localhost:8000___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://next.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).*
+    
+    Open the the `norent` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-Otherwise you can directly download it clicking on download button on this repository.
+## Deployment 
 
-### 2. Running in development mode
+  We deploy our version of the site using [Netlify](https://www.netlify.com/), which links directly to this repo and deploys on commits to the master branch. To use Netlify in deploying your own version, follow this [step-by-step guide](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/).
+  
+## Code of Conduct
 
-Go inside `gatsby-bulma-quickstart/` directory and run the following command:
-
-`npm run develop`
-
-### 3. Open the source code and start editing!
-
-The site is now running at
-[http://localhost:8000](http://localhost:8000).
-
-Open `gatsby-bulma-quickstart/` directory in your code editor of choice and edit it. Save your changes and the browser will update them in real time!
-
-### 4. Add your own Google Analytics Id
-
-Once you have google-analytics tracking id for your site, you can configure in `gatsby-config.js` file:
-
-```js
-resolve: `gatsby-plugin-google-analytics`,
-  options: {
-    // Your Tracking Id 👇
-    trackingId: 'UA-XXXXXXXX-X',
-    anonymize: true
-    }
-  }
-```
-
-## Contact me
-
-If you find any possible improvement or suggestion related to code or UI/UX please contribute by submitting a PR.
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A611K61)
-
-**Happy Coding!** 🎉🎉
+  Read about JustFix's code of conduct as an organization on our [Mission page](https://www.justfix.nyc/our-mission/).
