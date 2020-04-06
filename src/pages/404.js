@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../components/helmet'
+import '../scss/style.scss';
 
 const NotFoundPage = () => (
   <Helmet customMetadata={
