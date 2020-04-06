@@ -2,7 +2,13 @@ import React from 'react'
 import Helmet from '../components/helmet'
 
 const NotFoundPage = () => (
-  <Helmet>
+  <Helmet customMetadata={
+      {
+        title:"Page Not Found",
+        description: "This page does not exist.",
+        keywords: ""
+      }
+    }>
     <section className="hero is-large has-background-light">
       <div className="hero-body has-text-centered">
         <h1 className="title has-text-danger is-uppercase">Not found</h1>
