@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../scss/style.scss';
 import RentLogo from '../images/rent.svg';
-import Layout from '../components/layout';
+import Helmet from '../components/helmet';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { localizeRoute, LanguageToggle } from '../components/i18n';
@@ -41,9 +41,9 @@ const LandingPage__en = () => {
     `)
     
     return (
-        <Layout>
+        <Helmet>
             <LandingPageScaffolding content={data.contentfulPage} />
-        </Layout>
+        </Helmet>
     );
 }
 

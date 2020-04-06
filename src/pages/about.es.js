@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../scss/style.scss';
-import Layout from '../components/layout';
+import Helmet from '../components/helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import { AboutModalPageScaffolding } from './about.en';
 
@@ -12,9 +12,9 @@ const AboutModalPage__es = () => {
     `)
     
     return (
-        <Layout>
+        <Helmet>
             <AboutModalPageScaffolding content={data.contentfulPage} />
-        </Layout>
+        </Helmet>
     );
 }
 

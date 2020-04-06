@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
-export default () => (
+export default ({children}) => (
 	<StaticQuery
 		query={graphql`
 			query helmetQuery {
@@ -19,6 +19,7 @@ export default () => (
 			}
 		`}
 		render={data => (
+		<>
 			<Helmet>
 				<meta
 					name="viewport"
@@ -52,6 +53,8 @@ export default () => (
 				<meta name="twitter:image" content={encodeURI(data.site.siteMetadata.imageUrl)} />
 				<meta name="twitter:image:alt" content={data.site.siteMetadata.title} />
 			</Helmet>
+			{children}
+		</>
 		)}
 	/>
 );

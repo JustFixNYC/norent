@@ -2,13 +2,13 @@ import React from 'react';
 
 import '../scss/style.scss';
 import RentLogo from '../images/rent.svg';
-import Layout from '../components/layout';
+import Helmet from '../components/helmet';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 const widont = require('widont');
 
 const CityPage = (props) => (
-    <Layout>
+    <Helmet>
         <section className="hero is-fullheight">
             <div className="hero-body">
                 <div className="container">
@@ -32,7 +32,7 @@ const CityPage = (props) => (
             </div>
         
         </section>
-    </Layout>
+    </Helmet>
 )
 
 export default CityPage;

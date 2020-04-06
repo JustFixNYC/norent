@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Layout from '../components/layout';
+import Helmet from '../components/helmet';
 import { LandingPageScaffolding } from './index.en';
 
 const LandingPage__es = () => {
@@ -9,9 +9,9 @@ const LandingPage__es = () => {
     `)
     
     return (
-        <Layout>
+        <Helmet>
             <LandingPageScaffolding content={data.contentfulPage} />
-        </Layout>
+        </Helmet>
     );
 }
 

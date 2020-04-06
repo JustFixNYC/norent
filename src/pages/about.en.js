@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../scss/style.scss';
-import Layout from '../components/layout';
+import Helmet from '../components/helmet';
 import LandingPageScaffolding from './index.en.js';
 import { localizeRoute } from '../components/i18n';
 import { useStaticQuery, Link, graphql } from 'gatsby';
@@ -33,9 +33,9 @@ const AboutModalPage__en = () => {
     `)
     
     return (
-        <Layout>
+        <Helmet>
             <AboutModalPageScaffolding content={data.contentfulPage} />
-        </Layout>
+        </Helmet>
     );
 }
 
