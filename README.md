@@ -2,7 +2,7 @@
 
 NoRent.org (found at https://www.norent.org) is a web tool that helps tenants notify their landlords of an inability to pay rent during the COVID-19 crisis. Currently for tenants in Los Angeles, it is build in collaboration with the organization [SAJE](https://www.saje.net/).
 
-Actual site content is stored in [Contentful](https://www.contentful.com/), and
+This codebase is for the NoRent.org "Landing Portal" that directs users to the appropriate web app build with [Community Lawyer](https://community.lawyer/). Site content is stored in [Contentful](https://www.contentful.com/), and
 the site is built using [Gatsby](https://next.gatsbyjs.org/). 
 
 We used the [Gatsby Bulma Quickstart](https://www.gatsbyjs.org/starters/amandeepmittal/gatsby-bulma-quickstart/) template as a starting point for building out this tool.
